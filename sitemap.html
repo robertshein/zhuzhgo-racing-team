@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта сайта | ZHUZHGo Racing</title>
+    <meta name="description" content="Все разделы сайта гоночной команды ZHUZHGo Racing в одном месте. Быстрая навигация по страницам: новости, календарь, команда, дисциплины и другое.">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .sitemap-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .sitemap-category {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 25px;
+        }
+        .sitemap-category h2 {
+            color: #FFBB00;
+            font-family: Inter-Bold, sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .sitemap-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sitemap-category li {
+            margin-bottom: 12px;
+        }
+        .sitemap-category a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.2s;
+            border-bottom: 1px dotted transparent;
+        }
+        .sitemap-category a:hover {
+            color: #FFBB00;
+            border-bottom-color: #FFBB00;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background: #FFBB00;
+            color: #000;
+            border-radius: 50px;
+            font-family: Inter-Bold;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .back-link:hover {
+            background: #e0a500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Подключаем шапку как на всех страницах -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav" id="nav">
+                <a href="index.html" class="logo">ZHUZHGo</a>
+                <ul>
+                    <li>
+                        <a href="#">Автоспорт</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/categories/ice-racing.html">Ледовые гонки</a></li>
+                            <li><a href="pages/categories/circuit-racing.html">Кольцевые гонки</a></li>
+                            <li><a href="pages/categories/autocross.html">Автокросс</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/news.html">Новости</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="pages/team.html">Команда</a></li>
+                    <li><a href="pages/calendar.html">Календарь</a></li>
+                    <li><a href="#">Интернет-магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="menu-img" id="menuToggle"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sitemap-container">
+            <h1 style="color: #FFBB00; font-size: 2.5rem; margin-bottom: 20px;">Карта сайта</h1>
+            <p>Все разделы и страницы проекта ZHUZHGo Racing.</p>
+
+            <div class="sitemap-grid">
+                <!-- Основные разделы -->
+                <div class="sitemap-category">
+                    <h2>Главное</h2>
+                    <ul>
+                        <li><a href="index.html">Главная страница</a></li>
+                        <li><a href="pages/news.html">Новости</a></li>
+                        <li><a href="pages/calendar.html">Календарь гонок 2026</a></li>
+                        <li><a href="pages/team.html">Команда</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Дисциплины -->
+                <div class="sitemap-category">
+                    <h2>Дисциплины</h2>
+                    <ul>
+                        <li><a href="pages/categories/autocross.html">Автокросс</a></li>
+                        <li><a href="pages/categories/ice-racing.html">Ледовые гонки</a></li>
+                        <li><a href="pages/categories/circuit-racing.html">Кольцевые гонки</a></li>
+                    </ul>
+                </div>
+
+                <!-- Пилоты -->
+                <div class="sitemap-category">
+                    <h2>Пилоты</h2>
+                    <ul>
+                        <li><a href="pages/team/shein.html">Шейн Роберт</a></li>
+                        <li><a href="pages/team/zhuzhg11ov.html">Жужгов Михаил</a></li>
+                    </ul>
+                </div>
+
+                <!-- Информационные статьи -->
+                <div class="sitemap-category">
+                    <h2>Статьи и регламенты</h2>
+                    <ul>
+                        <li><a href="pages/news/news1.html">28 Гонка Чемпионов — репортаж</a></li>
+                        <li><a href="pages/news/tech-requirements.html">Технические требования к ледовым гонкам</a></li>
+                    </ul>
+                </div>
+
+                <!-- Технические страницы -->
+                <div class="sitemap-category">
+                    <h2>Служебное</h2>
+                    <ul>
+                        <li><a href="sitemap.xml">Sitemap.xml (для поисковых систем)</a></li>
+                        <li><a href="sitemap.html">Карта сайта (для пользователей)</a></li>
+                        <li><a href="404.html">Страница 404</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-link">← Вернуться на главную</a>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contacts">
+                    <div class="contacts-zag">Контакты:</div>
+                    <div class="contacts-text">Телефоны: 8 (800) 555 35-35<br>email: racing@zhuzh-go.ru</div>
+                </div>
+                <div class="footer-logo"><a href="index.html">ZHUZHGo</a></div>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Автоспорт</a>
+                <a href="pages/news.html">Новости</a>
+                <a href="#">Услуги</a>
+                <a href="pages/team.html">Команда</a>
+                <a href="pages/calendar.html">Календарь</a>
+                <a href="#">Интернет-магазин</a>
+                <a href="#">Контакты</a>
+                <a href="sitemap.html">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('nav').classList.toggle('nav-open');
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
